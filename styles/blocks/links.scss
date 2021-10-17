@@ -1,0 +1,53 @@
+.follow-link {
+  @include follow-link;
+
+  position: relative;
+  margin-bottom: 109px;
+  display: inline-flex;
+  align-items: center;
+
+  i {
+    font-size: 14px;
+    padding-left: 7px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $follow-link-color;
+    transform: translateY(100%);
+  }
+
+  &:hover {
+    i {
+      animation: change-padding 1.2s linear infinite;
+    }
+  }
+
+  &:hover::after {
+    animation: change-width 1.2s linear infinite;
+  }
+}
+
+.btn-link {
+  @include btn-link;
+
+  &:hover {
+    border: 2px solid $btn-border-color;
+    background-color: transparent;
+  }
+
+  &--hover-yellow {
+
+    &:hover {
+      color: $btn-color-yellow;
+      border: 2px solid $btn-border-color-yellow;
+      background-color: transparent;
+    }
+  }
+}

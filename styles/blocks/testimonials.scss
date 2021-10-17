@@ -1,0 +1,27 @@
+.blockquote-testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  max-width: 631px;
+  font-weight: $weight-regular;
+  font-style: italic;
+
+  &__avatar {
+    margin-right: 24px;
+
+    img {
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  .blockquote-text {
+    margin: 0;
+    max-width: 543px;
+
+    .cite {
+      color: $color-cite;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: $bg-color-white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color-white;
+    z-index: 2;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 5px 20px;
+    max-width: 1330px;
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: $weight-regular;
+    font-size: $small-size;
+  }
+
+  &__logo {
+    flex: 0 0 109px;
+    display: block;
+    font-weight: $weight-semi-bold;
+    text-decoration: none;
+    color: $primary-color;
+    z-index: 3;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__list {
+    @include reset-list;
+
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__item-link {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg-color-active;
+      color: $color-active;
+    }
+
+    &--is-active {
+      background-color: $bg-color-active;
+      color: $color-active;
+    }
+  }
+}
