@@ -1,0 +1,155 @@
+.general-information {
+  margin-bottom: 38%;
+
+  p {
+    margin-bottom: $base-margin-paragraph;
+    max-width: 635px;
+  }
+
+  p:last-of-type {
+    margin-bottom: $base-margin-paragraph-last;
+  }
+
+  .btn-link {
+    @include btn-link;
+
+
+    &:hover {
+      border: 2px solid $btn-border-color;
+      background-color: transparent;
+    }
+  }
+}
+
+.adopt-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__gallery {
+    max-width: 50%;
+    position: relative;
+    margin: -27px 0 0 0;
+    flex: 1 0 50%;
+    order: 1;
+
+    &-item {
+
+      img {
+        position: absolute;
+        filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.35));
+      }
+
+      .gallery-item__up {
+        top: 0;
+        left: 0;
+        z-index: 30;
+      }
+
+      .gallery-item__middle{
+        top: 124px;
+        left: 200px;
+        z-index: 20;
+      }
+
+      .gallery-item__bottom {
+        top: 296px;
+        left: 42px;
+        z-index: 10;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 50%;
+    flex: 1 0 60%;
+    order: 2;
+
+    p {
+      margin-bottom: $base-margin-paragraph;
+      max-width: 635px;
+      color: $color-white-lighter;
+    }
+
+    p:last-of-type {
+      margin-bottom: $base-margin-paragraph-last;
+    }
+  }
+}
+
+
+.volunteer-information {
+  margin-bottom: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__content {
+    max-width: 50%;
+    flex: 1 0 60%;
+
+    p {
+      margin-bottom: $base-margin-paragraph;
+      max-width: 635px;
+    }
+
+    p:last-of-type {
+      margin-bottom: $base-margin-paragraph-last;
+    }
+  }
+
+  &__gallery {
+    max-width: 50%;
+    position: relative;
+    flex: 1 0 40%;
+
+    &-item {
+
+      img {
+        position: absolute;
+        filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.35));
+      }
+
+      .gallery-item__up {
+        top: 26px;
+        left: 0;
+        z-index: 30;
+      }
+
+      .gallery-item__middle{
+        top: -144px;
+        left: 158px;
+        z-index: 20;
+      }
+  
+      .gallery-item__bottom {
+        top: 151px;
+        left: 200px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.purpose-section {
+  margin-bottom: 16%;
+
+  h1 {
+    max-width: 965px;
+  }
+
+  p {
+    margin-bottom: $base-margin-paragraph;
+    max-width: 635px;
+  }
+
+  p:last-of-type {
+    margin-bottom: $base-margin-paragraph-last;
+  }
+}
+
+.footer {
+  padding: 0 0 66px;
+  font-size: $copyright-size;
+  color: $color-cite;
+}

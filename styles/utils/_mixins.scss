@@ -1,0 +1,28 @@
+@mixin bg-img($img, $position: 0 0, $repeat: no-repeat) {
+  background: url(../images/#{$img}) $repeat $position / cover;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btn-link {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 15px;
+  font-weight: $weight-semi-bold;
+  font-size: $base-size;
+  text-decoration: none;
+  color: $btn-color;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: $btn-bg-color;
+}
+
+@mixin follow-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $follow-link-color;
+}

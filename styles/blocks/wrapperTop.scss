@@ -1,0 +1,6 @@
+.page__wrapper-top {
+  @include bg-img('first-bg.jpg');
+
+  margin-bottom: 20%;
+  background-color: $bg-color-white;
+}

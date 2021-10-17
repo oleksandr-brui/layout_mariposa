@@ -1,0 +1,5 @@
+.page__wrapper-bottom {
+  @include bg-img('second-bg.jpg');
+
+  color: $color-white-lighter;
+}

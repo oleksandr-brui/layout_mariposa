@@ -1,0 +1,17 @@
+h1,
+h2 {
+  margin-bottom: 40px;
+}
+
+h1 {
+  max-width: 713px;
+  font-weight: $weight-bold;
+  font-size: $large-size;
+}
+
+h2 {
+  max-width: 550px;
+  font-weight: $weight-semi-bold;
+  font-size: $middle-size;
+  color: $color-white;
+}

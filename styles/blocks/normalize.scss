@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: $base-font;
+  font-weight: $base-weight;
+  font-size: $base-size;
+  color: $primary-color;
+  background-color: $bg-color-black;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.page__container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1180px;
+}
+
+.main {
+  padding: 16% 0 0;
+}
+
+/* Start Keyframes */
+@keyframes change-width {
+  0% {
+    width: 93%;
+  }
+  50% {
+    width: 97%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes change-padding {
+  0% {
+    padding-left: 7px;
+  }
+  50% {
+    padding-left: 12px;
+  }
+  100% {
+    padding-left: 17px;
+  }
+}
+/* Finish Keyframes */
